@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="css/style.css">
 </head>  
 
-<body>
+<body class="inner-page">
  
   <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
+        <a class="logo-inner" href="index.html"><img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп Бородинский"></a>
         <ul>
           <li>            <a href="#">Информация</a>          </li>
           <li>            <a href="#">Новости</a>          </li>
-          <li>            <a href="#">Прайс-лист</a>          </li>
-          <li>            <a href="#">Магазин</a>          </li>
+          <li>            <a href="price.html">Прайс-лист</a>          </li>
+          <li class="active">   <span>Магазин</span>          </li>
           <li>            <a href="#">Контакты</a>          </li>
         </ul> 
       </nav>
@@ -26,8 +27,102 @@
     </div>
   </header>
   
-<main>
-  
+<main class="container">
+  <div class="inner-page-title">
+    <h1>Средства для ухода</h1>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="shop.html">Магазин</a></li>
+      <li class="current">Средства для ухода</li>
+    </ul>
+  </div>
+  <div>
+    <form action="#">
+      <h2>Производители:</h2>      
+      <label class="login-checkbox">
+      <input type="checkbox" name="baxter">
+      <span class="checkbox-indicator"></span>     
+      Baxter of California</label>
+      <label class="login-checkbox">
+      <input type="checkbox" name="natty">
+      <span class="checkbox-indicator"></span>     
+      Mr Natty</label>
+      <label class="login-checkbox">
+      <input type="checkbox" name="suavecito">
+      <span class="checkbox-indicator"></span>     
+      Suavecito</label>
+      <label class="login-checkbox">
+      <input type="checkbox" name="mali">
+      <span class="checkbox-indicator"></span>     
+      Malin+Goetz</label>
+      <label class="login-checkbox">
+      <input type="checkbox" name="murray">
+      <span class="checkbox-indicator"></span>     
+      Murray's</label>
+      <label class="login-checkbox">
+      <input type="checkbox" name="american">
+      <span class="checkbox-indicator"></span>     
+      American Crew</label>
+      <h2>Группы товаров:</h2>
+      <input type="radio" name="group" value="shave">
+      Бритвенные принадлежности
+      <input type="radio" name="group" value="means">
+      Средства для ухода
+      <input type="radio" name="group" value="acs">
+      Аксессуары
+      <button class="btn" type="submit">Показать</button>      
+    </form>
+  </div>
+  <div>
+    <div>
+      <img src="" alt="">
+      <span>Набор для путешествий</span><br>
+      Baxter of California
+      <button>2990 руб.</button>
+      <a href="#"><button>купить</button></a>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Увлажняющий кондиционер</span><br>
+      Baxter of California
+      <button>750 руб.</button>
+      <a href="#"><button>купить</button></a>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Гель для волос</span><br>
+      Suavecito
+      <button>290 руб.</button>
+      <a href="#"><button>купить</button></a>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Глина для укладки волос</span><br>
+      American crew
+      <button>500 руб.</button>
+      <a href="#"><button>купить</button></a>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Гель для волос</span><br>
+      American crew
+      <button>300 руб.</button>
+      <a href="#"><button>купить</button></a>
+    </div>
+    <div>
+      <img src="" alt="">
+      <span>Набор для бритья</span><br>
+      Baxter of California
+      <button>3900 руб.</button>
+      <a href="#"><button>купить</button></a>
+    </div>
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+    </div>
+  </div>
 </main>
 
 <footer class="main-footer">
