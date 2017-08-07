@@ -11,7 +11,7 @@ body {
   
   
    background: #000 url("../img/body-bg.jpg") no-repeat center top; 
-  /* background: #000000 url("/barbershop-index.jpg") no-repeat 50% 3px; */
+  /* background: #000000 url("..img/barbershop-index.jpg") no-repeat 50% 3px; */
 }
 
 .inner-page {
@@ -133,8 +133,7 @@ body {
 }
 
 .login:hover {
-  background: #242424; 
-  
+  background: #242424;   
 }
 
 .login::before{
@@ -146,7 +145,7 @@ body {
   width: 18px;
   height: 16px;
   
-  background: url(/img/icon-login.png) no-repeat;  
+  background: url(../img/icon-login.png) no-repeat;  
   opacity: .3;
 }
 
@@ -633,27 +632,27 @@ body {
 
 
 .social-btn-vk {
-  background: #000  url(/img/v.png) no-repeat center;
+  background: #000 url(../img/v.png) no-repeat center;
 }
 
 .social-btn-fb {
-  background: #000 url(/img/f.png) no-repeat center;
+  background: #000 url(../img/f.png) no-repeat center;
 }
 
 .social-btn-inst {
-  background: #000 url(/img/i.png) no-repeat center;
+  background: #000 url(../img/i.png) no-repeat center;
 }
 
 .social-btn-vk:hover {
-  background: #fff url(/img/vv.png) no-repeat center;
+  background: #fff url(../img/vv.png) no-repeat center;
 }
 
 .social-btn-fb:hover {
-  background: #fff url(/img/ff.png) no-repeat center;
+  background: #fff url(../img/ff.png) no-repeat center;
 }
 
 .social-btn-inst:hover {
-  background: #fff url(/img/ii.png) no-repeat center;
+  background: #fff url(../img/ii.png) no-repeat center;
 }
 
 .footer-copyright {
@@ -710,9 +709,9 @@ body {
   20% 40% 60% 80%      {transform: translateX(10px);  }
 }
 
-  .modal-error {
-    animation: shake 0.6s;
-  }
+.modal-error {
+  animation: shake 0.6s;
+}
 
 
 .modal-content-map {
