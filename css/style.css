@@ -1,3 +1,11 @@
+@font-face {
+  font-family: PT Sans Narrow;
+  src: url(../fonts/ptsansnarrow.woff);
+  src: url(../fonts/ptsansnarrow.woff2);
+  src: url(../fonts/ptsansnarrowbold.woff);
+  src: url(../fonts/ptsansnarrowbold.woff2);
+}
+
 body {
   min-width: 960px;
   margin: 0;
