@@ -476,7 +476,7 @@ body {
   border: 2px solid #000000;
 }
 
-/* Особые стили для контесктных тегов*/
+/* Особые стили для контекстных тегов */
 
 .big-heading {
   margin-top: 55px;
@@ -656,9 +656,7 @@ body {
   
   background: #000;
 
-  transition: 
-    background-color 0.5s,
-    background-position 0.5s;    
+  transition: background-color 0.8s;    
 }
 
 .social-btn-vk {
@@ -706,7 +704,20 @@ body {
   background-color: white;
 }
 
-/* всплывающая форма*/
+/* всплывающие окна */
+
+@keyframes bounce {
+  0%   {transform: translateY(-2000px);}
+  70%  {transform: translateY(30px);   }
+  90%  {transform: translateY(-10px);  }
+  100% {transform: translateY(0);      }
+}
+
+@keyframes shake {
+  0%, 100%                 {transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90%  {transform: translateX(-10px); }
+  20%, 40%, 60%, 80%       {transform: translateX(10px);  }
+}
 
 .modal-content {
   display: none;  
@@ -724,31 +735,6 @@ body {
   background: #f8f3f0 url(../img/pattern-white.jpg);
   box-shadow: 0 30px 50px rgba(0,0,0,0.7);
 }
-
-
-
-@keyframes bounce {
-  0%   {transform: translateY(-2000px);}
-  70%  {transform: translateY(30px);   }
-  90%  {transform: translateY(-10px);  }
-  100% {transform: translateY(0);      }
-}
-
-.modal-content-show{
-  display: block;
-  animation: bounce 0.6s;
-}
-
-@keyframes shake {
-  0% 100%              {transform: translateX(0);     }
-  10% 30% 50% 70% 90%  {transform: translateX(-10px); }
-  20% 40% 60% 80%      {transform: translateX(10px);  }
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 
 .modal-content-map {
   display: none;
@@ -778,6 +764,19 @@ body {
   height: 100%;
   
   background: rgba(0,0,0,0.5);
+}
+
+.modal-overlay-show {
+  display: block;
+}
+
+.modal-content-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -833,6 +832,7 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .login-form {
   position: relative;
 }
