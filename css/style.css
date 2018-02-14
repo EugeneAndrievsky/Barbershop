@@ -947,7 +947,9 @@ body {
   vertical-align: top;
   text-decoration: none;
 
-  background: #000 center;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
 
   -webkit-transition: background-color 0.5s,
               background-position 0.5s;
@@ -957,27 +959,30 @@ body {
 }
 
 .social-btn-vk {
-  background: #000 url("../img/v.png") no-repeat center;
-}
-
-.social-btn-fb {
-  background: #000 url("../img/f.png") no-repeat center;
-}
-
-.social-btn-inst {
-  background: #000 url("../img/i.png") no-repeat center;
+  background-image: url("../img/vk.png");
 }
 
 .social-btn-vk:hover {
-  background: #fff url("../img/vv.png") no-repeat center;
+  background-color: #fff;
+  background-image: url("../img/vk-hover.png");
+}
+
+.social-btn-fb {
+  background-image: url("../img/fb.png");
 }
 
 .social-btn-fb:hover {
-  background: #fff url("../img/ff.png") no-repeat center;
+  background-color: #fff;
+  background-image: url("../img/fb-hover.png");
+}
+
+.social-btn-inst {
+  background-image: url("../img/inst.png");
 }
 
 .social-btn-inst:hover {
-  background: #fff url("../img/ii.png") no-repeat center;
+  background-color: #fff;
+  background-image: url("../img/inst-hover.png");
 }
 
 .footer-copyright {
