@@ -222,7 +222,8 @@ body {
   height: 20px;
   background: #fff;
   margin-left: -10px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .index-content {
@@ -430,7 +431,8 @@ body {
 
   top: 4px;
   right: 15px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 
   width: 8px;
   height: 8px;
@@ -540,7 +542,8 @@ body {
   height: 8px;
 
   background-color: #000;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .price-table {
@@ -593,8 +596,12 @@ body {
 /* SHOP */
 
 .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .shop-form {
@@ -604,8 +611,13 @@ body {
 
 .shop-form-producers,
 .shop-form-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 50px;
 }
 
@@ -619,26 +631,38 @@ body {
 }
 
 .shop-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 700px;
   margin: 0;
   margin-bottom: 25px;
 }
 
 .shop-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 220px;
   margin-bottom: 20px;
 
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+          box-shadow: 0 0 15px rgba(0, 1, 1, .2);
 }
 
 .shop-item:hover {  
-  box-shadow: 5px 5px 25px rgba(0, 1, 1, .3);
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 1, 1, .3);  
+          box-shadow: 5px 5px 25px rgba(0, 1, 1, .3);
 }
 
 .shop-item-img {
@@ -671,11 +695,15 @@ body {
 }
 
 .shop-item-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .shop-item-price {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 10px 0;
 
   text-align: center;
@@ -683,16 +711,21 @@ body {
 }
 
 .shop-item-btn {
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   margin-right: 0;
 }
 
 .shop-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .shop-pagination .btn {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 43px;
   height: 43px;
   margin: 0;
@@ -715,15 +748,25 @@ body {
 /* ITEM */
 
 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .item-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 460px;
   margin: 0;
 
@@ -731,11 +774,13 @@ body {
 }
 
 .item-gallery img {
-  box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+  -webkit-box-shadow: 0 0 15px rgba(0, 1, 1, .2);
+          box-shadow: 0 0 15px rgba(0, 1, 1, .2);
 }
 
 .item-gallery img:not(.show):hover {
-  box-shadow: 5px 5px 25px rgba(0, 1, 1, .3);
+  -webkit-box-shadow: 5px 5px 25px rgba(0, 1, 1, .3);
+          box-shadow: 5px 5px 25px rgba(0, 1, 1, .3);
 }
 
 .item-gallery .show {
@@ -757,26 +802,34 @@ body {
 }
 
 .item-info .tech-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 380px;
   margin: 0;
   margin-bottom: 30px;
 }
 
 .tech-info span {
-  flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 
   text-align: right;
   color: #aeaeae;
 }
 
 .tech-info b {
-  flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .item-price {
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   max-width: 50%;
   padding-left: 30px;
   padding-right: 30px;
@@ -810,7 +863,9 @@ body {
 
   background-color: #000000;
 
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+          transform: rotate(45deg);
 }
 
 
@@ -824,7 +879,8 @@ body {
 
   background: #e9e5dc url("../img/map.jpg");
   border: 7px solid #ffffff;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -839,7 +895,8 @@ body {
   color: #000;
 
   background: #f8f3f0 url("../img/pattern-white.jpg");
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -892,6 +949,9 @@ body {
 
   background: #000 center;
 
+  -webkit-transition: background-color 0.5s,
+              background-position 0.5s;
+
   transition: background-color 0.5s,
               background-position 0.5s;
 }
@@ -943,17 +1003,30 @@ body {
 
 /* Всплывающие окна */
 
+@-webkit-keyframes bounce {
+  0%   {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
+  70%  {-webkit-transform: translateY(30px);transform: translateY(30px);   }
+  90%  {-webkit-transform: translateY(-10px);transform: translateY(-10px);  }
+  100% {-webkit-transform: translateY(0);transform: translateY(0);      }
+}
+
 @keyframes bounce {
-  0%   {transform: translateY(-2000px);}
-  70%  {transform: translateY(30px);   }
-  90%  {transform: translateY(-10px);  }
-  100% {transform: translateY(0);      }
+  0%   {-webkit-transform: translateY(-2000px);transform: translateY(-2000px);}
+  70%  {-webkit-transform: translateY(30px);transform: translateY(30px);   }
+  90%  {-webkit-transform: translateY(-10px);transform: translateY(-10px);  }
+  100% {-webkit-transform: translateY(0);transform: translateY(0);      }
+}
+
+@-webkit-keyframes shake {
+  0%, 100%                {-webkit-transform: translateX(0);transform: translateX(0);    }
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+  20%, 40%, 60%, 80%      {-webkit-transform: translateX(10px);transform: translateX(10px); }
 }
 
 @keyframes shake {
-  0%, 100%                {transform: translateX(0);    }
-  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-  20%, 40%, 60%, 80%      {transform: translateX(10px); }
+  0%, 100%                {-webkit-transform: translateX(0);transform: translateX(0);    }
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+  20%, 40%, 60%, 80%      {-webkit-transform: translateX(10px);transform: translateX(10px); }
 }
 
 .modal-content {
@@ -970,7 +1043,8 @@ body {
   color: #000;
 
   background: #f8f3f0 url("../img/pattern-white.jpg");
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal-content-map {
@@ -987,7 +1061,8 @@ body {
 
   background: #e9e5dc url("../img/map.jpg");
   border: 7px solid #ffffff;
-  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 30px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 30px 20px rgba(0, 0, 0, 0.7);
 }
 
 .modal-overlay {
@@ -1009,11 +1084,13 @@ body {
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -1046,11 +1123,13 @@ body {
 }
 
 .modal-content-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-content-close::after {
-  transform: rotate(-45deg)
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg)
 }
 
 .modal-content h2 {
@@ -1159,11 +1238,13 @@ body {
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg)
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 
