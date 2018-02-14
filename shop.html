@@ -45,34 +45,34 @@
         <section class="shop-form-producers">
           <h2>Производители:</h2>
           <label class="list-checkbox login-checkbox">
-            <input type="checkbox" name="baxter">
+            <input type="checkbox" name="baxter" checked>
             <span class="checkbox-indicator"></span>     
-            Baxter of California
+            <span class="label">Baxter of California</span>
           </label>
           <label class="list-checkbox login-checkbox">
             <input type="checkbox" name="natty">
             <span class="checkbox-indicator"></span>     
-            Mr Natty
+            <span class="label">Mr Natty</span>
           </label>
           <label class="list-checkbox login-checkbox">
-            <input type="checkbox" name="suavecito">
+            <input type="checkbox" name="suavecito" checked>
             <span class="checkbox-indicator"></span>     
-            Suavecito
+            <span class="label">Suavecito</span>
           </label>
           <label class="list-checkbox login-checkbox">
             <input type="checkbox" name="mali">
             <span class="checkbox-indicator"></span>     
-            Malin+Goetz
+            <span class="label">Malin+Goetz</span>
           </label>
           <label class="list-checkbox login-checkbox">
-            <input type="checkbox" name="murray">
+            <input type="checkbox" name="murray" checked disabled>
             <span class="checkbox-indicator"></span>     
-            Murray's
+            <span class="label">Murray's</span>
           </label>
           <label class="list-checkbox login-checkbox">
-            <input type="checkbox" name="american">
+            <input type="checkbox" name="american" checked>
             <span class="checkbox-indicator"></span>     
-            American Crew
+            <span class="label">American Crew</span>
           </label>
         </section>
 
@@ -81,17 +81,17 @@
           <label class="login-checkbox list-radio">
             <input type="radio" name="group">
             <span class="checkbox-indicator"></span>
-            Бритвенные принадлежности
+            <span class="label">Бритвенные принадлежности</span>
           </label>
           <label class="login-checkbox list-radio">
-            <input type="radio" name="group" value="means">
+            <input type="radio" name="group" value="means" checked>
             <span class="checkbox-indicator"></span>
-            Средства для ухода
+            <span class="label">Средства для ухода</span>
           </label>
           <label class="login-checkbox list-radio">
-            <input type="radio" name="group" value="acs">
+            <input type="radio" name="group" value="acs" disabled>
             <span class="checkbox-indicator"></span>
-            Аксессуары
+            <span class="label">Аксессуары</span>
           </label>
         </section>
 
@@ -233,9 +233,10 @@
       <input class="icon-user" type="text" name="login" placeholder="Логин">
       <input class="icon-password" type="password" name="password" placeholder="Пароль">
       <label class="login-checkbox">
-          <input type="checkbox" name="remember">
-          <span class="checkbox-indicator"></span>
-          Запомните меня</label>
+        <input type="checkbox" name="remember">
+        <span class="checkbox-indicator"></span>
+        <span class="label">Запомните меня</span>
+      </label>
       <a class="restore" href="#">Я забыл пароль!</a>
       <button class="btn" type="submit">Войти</button>
     </form>
