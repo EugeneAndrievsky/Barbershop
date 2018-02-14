@@ -5,7 +5,7 @@ var close = document.querySelector(".modal-content-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
-var storage = localStorage.getItem("login");
+var storage = localStorage.getItem("login"); //Не работает в IE
 
 
 // Окрытие формы логина - клик по кнопке "Вход"
